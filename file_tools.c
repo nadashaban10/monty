@@ -92,6 +92,7 @@ void op_func(char *opcode, char *value, int line, int format)
 		{"add", add_nodes},
 		{"sub", sub_t},
 		{"div", div_func},
+		{"pchar", pchar_func},
 		{NULL, NULL}
 	};
 

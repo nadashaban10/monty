@@ -66,6 +66,7 @@ void swap_nodes(stack_t **stack, unsigned int line_num);
 void add_nodes(stack_t **stack, unsigned int line_number);
 void sub_t(stack_t **stack, unsigned int line_num);
 void div_func(stack_t **stack, unsigned int line_num);
+void pchar_func(stack_t **stack, unsigned int line_num);
 
 /*Error hanlding*/
 void def_err(int error_code, ...);

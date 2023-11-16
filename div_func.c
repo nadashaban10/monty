@@ -25,7 +25,7 @@ void div_func(stack_t **stack, unsigned int line_num)
 	/*if the top element is zero*/
 	if ((*stack)->n == 0)
 	{
-		fprintf(stderr, "L%u: division by zero\n", ln);
+		fprintf(stderr, "L%u: division by zero\n", line_num);
 		exit(EXIT_FAILURE);
 	}
 

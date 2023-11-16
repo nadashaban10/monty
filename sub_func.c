@@ -1,9 +1,9 @@
 #include "monty.h"
 
 /**
-*sub_t - division two element
-*@stack: pointer to pointer
-*@line_num: integer line num opcode
+ * sub_t - division two element
+ * @stack: pointer to pointer
+ * @line_num: integer line num opcode
 */
 
 void sub_t(stack_t **stack, unsigned int line_num)

@@ -41,6 +41,7 @@ typedef struct instruction_s
 } instruction_t;
 
 extern stack_t *head;
+
 typedef void (*func_op)(stack_t **, unsigned int);
 
 /*file operations*/

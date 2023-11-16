@@ -40,13 +40,13 @@ typedef struct instruction_s
 } instruction_t;
 
 extern stack_t *head;
-typedef void (*op_func)(stack_t **, unsigned int);
+typedef void (*func_op)(stack_t **, unsigned int);
 
 /*file operations*/
 void open_file(char *file_name);
 int sep_line(char *buff, int line_num, int format);
 void ex_file(FILE *fd);
-void fun_call(op_func fun, char *op, char *value, int line, int format);
+void fun_call(func_op fun, char *op, char *value, int line, int format);
 void op_func(char *opcode, char *value, int line, int format);
 
 /*Stack operations*/

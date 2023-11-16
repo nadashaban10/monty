@@ -18,7 +18,7 @@ void push_to_stack(stack_t **new_node,
 		head = *new_node;
 		return;
 	}
-	buf = head;
+	buf = head;                        
 	head = *new_node;
 	head->next = buf;
 	buf->prev = head;

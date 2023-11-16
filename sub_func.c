@@ -1,11 +1,18 @@
 #include "monty.h"
-void sub_t(stack_t **stack, unsigned int line_num) 
+
+/**
+*sub_t - division two element
+*@stack: pointer to pointer
+*@line_num: integer line num opcode
+*/
+
+void sub_t(stack_t **stack, unsigned int line_num)
 {
 	int second_value;
 	int first_value;
 	int result;
 	stack_t *temp;
-	
+
 	/*Check if the stack contains less than two elements*/
 	if (*stack == NULL || (*stack)->next == NULL)
 	{

@@ -91,6 +91,7 @@ void op_func(char *opcode, char *value, int line, int format)
 		{"swap", swap_nodes},
 		{"add", add_nodes},
 		{"sub", sub_t},
+		{"div", div_func},
 		{NULL, NULL}
 	};
 

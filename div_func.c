@@ -2,9 +2,9 @@
 
 
 /**
-*div_func - division two element
-*@stack: pointer to pointer
-*@line_num: integer line num opcode
+ * div_func - division two element
+ * @stack: pointer to pointer
+ * @line_num: integer line num opcode
 */
 
 

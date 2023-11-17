@@ -1,10 +1,10 @@
 #include "monty.h"
 
 /**
- *open_file - opens a file
- *@file_name: the file namepath
- *Return: void
- */
+ * open_file - opens a file
+ * @file_name: the file namepath
+ * Return: void
+*/
 
 void open_file(char *file_name)
 {
@@ -18,10 +18,10 @@ void open_file(char *file_name)
 }
 
 /**
- *ex_file - reads a file
- *@fd: pointer to file descriptor
- *Return: void
- */
+ * ex_file - reads a file
+ * @fd: pointer to file descriptor
+ * Return: void
+*/
 
 void ex_file(FILE *fd)
 {
@@ -38,14 +38,14 @@ void ex_file(FILE *fd)
 
 
 /**
- *sep_line - Separates each line into tokens to determine
- *which function to call
- *@buff: line from the file
- *@line_num: line number
- *@format:  storage format. If 0 Nodes will be entered as a stack.
- *if 1 nodes will be entered as a queue.
- *Return: Returns 0 if the opcode is stack. 1 if queue.
- */
+ * sep_line - Separates each line into tokens to determine
+ * which function to call
+ * @buff: line from the file
+ * @line_num: line number
+ * @format:  storage format. If 0 Nodes will be entered as a stack.
+ * if 1 nodes will be entered as a queue.
+ * Return: Returns 0 if the opcode is stack. 1 if queue.
+*/
 
 int sep_line(char *buff, int line_num, int format)
 {
@@ -70,14 +70,14 @@ int sep_line(char *buff, int line_num, int format)
 }
 
 /**
- *op_func - find the appropriate function for the opcode
- *@opcode: opcode
- *@value: argument of opcode
- *@format:  storage format. If 0 Nodes will be entered as a stack.
- *@line: line number
- *if 1 nodes will be entered as a queue.
- *Return: void
- */
+ * op_func - find the appropriate function for the opcode
+ * @opcode: opcode
+ * @value: argument of opcode
+ * @format:  storage format. If 0 Nodes will be entered as a stack.
+ * @line: line number
+ * if 1 nodes will be entered as a queue.
+ * Return: void
+*/
 void op_func(char *opcode, char *value, int line, int format)
 {
 	int i, flag;
@@ -114,14 +114,14 @@ void op_func(char *opcode, char *value, int line, int format)
 
 
 /**
- *fun_call - Calls the required function.
- *@fun: Pointer to the function that is about to be called.
- *@op: string representing the opcode.
- *@value: string representing a numeric value.
- *@line: line numeber for the instruction.
- *@format: Format specifier. If 0 Nodes will be entered as a stack.
- *if 1 nodes will be entered as a queue.
- */
+ * fun_call - Calls the required function.
+ * @fun: Pointer to the function that is about to be called.
+ * @op: string representing the opcode.
+ * @value: string representing a numeric value.
+ * @line: line numeber for the instruction.
+ * @format: Format specifier. If 0 Nodes will be entered as a stack.
+ * if 1 nodes will be entered as a queue.
+*/
 void fun_call(func_op fun, char *op, char *value, int line, int format)
 {
 	stack_t *node;
